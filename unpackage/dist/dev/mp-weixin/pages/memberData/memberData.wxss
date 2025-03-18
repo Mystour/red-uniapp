@@ -1,0 +1,78 @@
+
+.underline-text.data-v-6bfe28c6 {
+	position: relative;
+	line-height: 60rpx;
+	margin: 20rpx 10rpx 10rpx 10rpx;
+	display: inline-block;
+	/* 确保块级元素也能应用下划线 */
+}
+
+/* 使用伪元素添加下划线 */
+.underline-text.data-v-6bfe28c6::after {
+	content: '';
+	/* 伪元素必须有内容 */
+	position: absolute;
+	bottom: 0;
+	/* 下划线位于文字底部 */
+	left: 0;
+	width: 100%;
+	/* 横跨整个文本 */
+	height: 13rpx;
+	/* 下划线厚度 */
+	opacity: 25%;
+	padding: 10rpx 0rpx 5rpx 0rpx;
+	margin-left: 30rpx;
+	width: 150rpx;
+	background-color: red;
+	/* 下划线颜色 */
+}
+
+/* .dataEntrance {
+	background-color: white;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.entrance {
+	margin: 50rpx;
+	text-align: center;
+}
+
+.entrance text,
+.entrance image {
+	vertical-align: middle;
+	display: inline-block;
+} */
+.dataEntrance.data-v-6bfe28c6 {
+	background-color: white;
+	margin: 30rpx 15rpx;
+	padding: 20rpx;
+	border-radius: 20rpx;
+}
+.dataEntrance image.data-v-6bfe28c6 {
+	height: 80rpx;
+	width: 80rpx;
+}
+.grid-text.data-v-6bfe28c6 {
+	font-size: 14px;
+	color: #909399;
+	padding: 10rpx 0 20rpx 0rpx;
+
+	box-sizing: border-box;
+}
+
+/* .dataEntrance text {
+	background-color: chocolate;
+} */
+.u-tabs.data-v-6bfe28c6 {
+	color: black;
+}
+.adminShow.data-v-6bfe28c6 {
+	margin: 10rpx;
+	padding: 20rpx;
+	border: 1rpx solid #b8bcc3;
+	border-radius: 20rpx;
+}
+

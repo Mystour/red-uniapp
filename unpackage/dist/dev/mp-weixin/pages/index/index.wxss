@@ -1,0 +1,120 @@
+
+page.data-v-57280228 {
+	box-sizing: border-box;
+}
+.margin.data-v-57280228 {
+	margin: 70rpx 30rpx;
+}
+.padding.data-v-57280228 {
+	padding: 15rpx 20rpx;
+}
+.pic.data-v-57280228 {
+	height: 1000rpx;
+	width: 50%;
+}
+.affairBag.data-v-57280228,
+.learnTest.data-v-57280228 {
+	background-color: white;
+	border-radius: 25rpx;
+}
+.affairBag .rightLabel.data-v-57280228 {
+	vertical-align: middle;
+	/* line-height: 28rpx; */
+	width: 26rpx;
+	height: 26rpx;
+	margin: 0;
+}
+.learnTest .rightLabel.data-v-57280228 {
+	vertical-align: middle;
+	height: 30rpx;
+	width: 30rpx;
+	margin: 0;
+}
+.jinnnang.data-v-57280228,
+.studyTest.data-v-57280228 {
+	font-size: 32rpx;
+	font-weight: 1000;
+}
+.affairBag .more.data-v-57280228 {
+	font-size: 28rpx;
+	margin-right: 2rpx;
+	color: #E2E2E2;
+}
+.learnTest .more.data-v-57280228 {
+	font-size: 28rpx;
+	margin-right: 8rpx;
+}
+.learnTest .rightBox.data-v-57280228 {
+	border: 3rpx solid #ff8181;
+	color: #ff8181;
+	padding: 10rpx 20rpx 10rpx 30rpx;
+	border-radius: 30rpx;
+}
+.rightBox.data-v-57280228 {
+	display: inline-block;
+	float: right;
+	line-height: 32rpx;
+	/*与左侧字体同高*/
+}
+.affairBag .topTitle.data-v-57280228 {
+	border-bottom: 1rpx solid #eeeeee;
+}
+.studyTest .listMsg.data-v-57280228 {
+	margin: 20rpx;
+}
+.barText.data-v-57280228 {
+	font-size: 20rpx;
+	color: #f3f3f3;
+	border: 1rpx solid #2ea0fe;
+	border-radius: 15rpx;
+	background-color: #2ea0fe;
+	padding: 7rpx 10rpx;
+	margin-top: 20rpx;
+	display: inline-block;
+}
+.processBar.data-v-57280228 {
+	margin: 10rpx 20rpx 20rpx 10rpx;
+}
+.affairBag .listMsg.data-v-57280228 {
+	margin: 10rpx 0rpx;
+	display: flex;
+}
+.listMsg .image.data-v-57280228 {
+	margin: 10rpx 20rpx;
+	width: 220rpx;
+	height: 160rpx;
+}
+.listMsg .listTitle.data-v-57280228 {
+	font-size: 28rpx;
+	font-weight: 800;
+	line-height: 50rpx;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	/* 指定显示的行数 */
+	-webkit-box-orient: vertical;
+}
+.listMsg image.data-v-57280228 {
+	width: 100%;
+	height: 100%;
+	border-radius: 8rpx;
+}
+.listMsg .viewText.data-v-57280228 {
+	width: 360rpx;
+	height: 100rpx;
+	color: #6f6f6f;
+	margin-top: 10rpx;
+	padding: 10rpx;
+	height: 160rpx;
+	/* 或具体高度，根据行数和行高调整 */
+	overflow: hidden;
+	/* background-color: #2ea0fe; */
+}
+.listMsg .viewTime.data-v-57280228 {
+	font-size: 24rpx;
+	color: #cbcbcb;
+	position: relative;
+	left: 230rpx;
+	bottom: -20rpx;
+}
+

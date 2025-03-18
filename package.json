@@ -1,0 +1,19 @@
+{
+  "name": "red-uniapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@qiun/ucharts": "^2.5.0-20230101",
+    "uview-ui": "^2.0.36"
+  },
+  "devDependencies": {
+    "sass-loader": "^10.5.2"
+  }
+}

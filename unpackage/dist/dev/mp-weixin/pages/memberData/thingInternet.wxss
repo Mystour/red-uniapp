@@ -1,0 +1,23 @@
+
+page.data-v-6dfd9b46 {
+	box-sizing: border-box;
+}
+.container.data-v-6dfd9b46 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+/* 请根据实际需求修改父元素尺寸，组件自动识别宽高 */
+.charts-box.data-v-6dfd9b46 {
+	width: 100%;
+	margin: 30rpx 20rpx;
+	background-color: white;
+}
+.charts-box text.data-v-6dfd9b46 {
+	font-weight: 700;
+	line-height: 80rpx;
+	border-bottom: 4rpx solid #eaea00;
+}
+

@@ -1,0 +1,182 @@
+{
+	"easycom": {
+			"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+		},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "学习路上"
+			}
+		},
+		// {
+		// 	"path" : "pages/learnWay/learnWay",
+		// 	"style" : 
+		// 	{
+		// 		"navigationBarTitleText" : ""
+		// 	}
+		// },
+		{
+			"path" : "pages/index/learnTest",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/index/answerQuestion",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/memberCommunity/memberCommunity",
+			"style" : 
+			{
+				"navigationBarTitleText" : "党员社群"
+			}
+		},
+		{
+			"path" : "pages/memberCommunity/help",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/memberCommunity/young",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/memberCommunity/suggestion",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/memberCommunity/memberWall",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/memberCommunity/addAction",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/memberCommunity/competitionHonor",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/memberData/memberData",
+			"style" : 
+			{
+				"navigationBarTitleText" : "党建大数据"
+			}
+		},
+		{
+			"path" : "pages/memberData/finance",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/memberData/software",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/memberData/teachingStaff",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/memberData/thingInternet",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/memberData/partyCommittee",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/memberData/telecommunication",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "common/page/show",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		}
+		// {
+		// 	"path" : "pages/index/index",
+		// 	"style" : 
+		// 	{
+		// 		"navigationBarTitleText" : ""
+		// 	}
+		// }
+	],
+	"tabBar": {
+		// 未选择时图标字体颜色
+		"color": "#8a8a8a",
+		// 选择时图标字体颜色
+		"selectedColor": "#d81e06",
+		// "borderStyle": "#d3d3d3",
+		"position": "bottom",
+		"backgroundColor": "#fff",
+		"list": [
+			{
+				"text": "学习路上",
+				"pagePath": "pages/index/index",
+				"iconPath": "static/images/首页1.png",
+				"selectedIconPath": "static/images/首页.png"
+			},
+			{
+				"text": "党员社群",
+				"pagePath": "pages/memberCommunity/memberCommunity",
+				"iconPath": "static/images/社区1.png",
+				"selectedIconPath": "static/images/社区.png"
+			},
+			{
+				"text": "党建大数据",
+				"pagePath": "pages/memberData/memberData",
+				"iconPath": "static/images/数据1.png",
+				"selectedIconPath": "static/images/数据.png"
+			}
+		]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#fff"
+		// "backgroundColor": "#afafaf"
+	},
+	"uniIdRouter": {}
+}

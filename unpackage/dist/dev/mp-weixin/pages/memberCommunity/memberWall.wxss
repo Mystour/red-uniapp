@@ -1,0 +1,34 @@
+
+.li.data-v-76378c5d {
+	background-color: #fefefe;
+	padding: 20rpx 10rpx;
+	margin: 10rpx 0;
+}
+.li image.data-v-76378c5d {
+	width: 180rpx;
+	height: 180rpx;
+	float: left;
+	margin: 20rpx;
+}
+.li .uname.data-v-76378c5d {
+	/* font-size: 30rpx; */
+	font-weight: 800;
+	display: block;
+}
+.li .other.data-v-76378c5d {
+	display: block;
+	font-size: 30rpx;
+}
+.li .honor.data-v-76378c5d {
+	font-size: 28rpx;
+	color: #bebebe;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 4;
+	/* 指定显示的行数 */
+	-webkit-box-orient: vertical;
+}
+.li .text.data-v-76378c5d {
+	margin: 20rpx 30rpx;
+}
+

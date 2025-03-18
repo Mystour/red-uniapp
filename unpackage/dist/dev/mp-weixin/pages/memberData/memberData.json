@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "党建大数据",
+  "usingComponents": {
+    "u-grid": "/node-modules/uview-ui/components/u-grid/u-grid",
+    "u-grid-item": "/node-modules/uview-ui/components/u-grid-item/u-grid-item",
+    "u-tabs": "/node-modules/uview-ui/components/u-tabs/u-tabs",
+    "qiun-data-charts": "/uni_modules/qiun-data-charts/components/qiun-data-charts/qiun-data-charts",
+    "mapdemo": "/pages/memberData/mapdemo"
+  }
+}

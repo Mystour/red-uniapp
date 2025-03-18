@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/index/learnTest",
+    "pages/index/answerQuestion",
+    "pages/memberCommunity/memberCommunity",
+    "pages/memberCommunity/help",
+    "pages/memberCommunity/young",
+    "pages/memberCommunity/suggestion",
+    "pages/memberCommunity/memberWall",
+    "pages/memberCommunity/addAction",
+    "pages/memberCommunity/competitionHonor",
+    "pages/memberData/memberData",
+    "pages/memberData/finance",
+    "pages/memberData/software",
+    "pages/memberData/teachingStaff",
+    "pages/memberData/thingInternet",
+    "pages/memberData/partyCommittee",
+    "pages/memberData/telecommunication",
+    "common/page/show"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#fff"
+  },
+  "tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#d81e06",
+    "position": "bottom",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "text": "学习路上",
+        "pagePath": "pages/index/index",
+        "iconPath": "static/images/首页1.png",
+        "selectedIconPath": "static/images/首页.png"
+      },
+      {
+        "text": "党员社群",
+        "pagePath": "pages/memberCommunity/memberCommunity",
+        "iconPath": "static/images/社区1.png",
+        "selectedIconPath": "static/images/社区.png"
+      },
+      {
+        "text": "党建大数据",
+        "pagePath": "pages/memberData/memberData",
+        "iconPath": "static/images/数据1.png",
+        "selectedIconPath": "static/images/数据.png"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

@@ -1,0 +1,1 @@
+<view class="container data-v-46c7defa"><view class="charts-box data-v-46c7defa"><text class="data-v-46c7defa">年度收支分析</text><qiun-data-charts vue-id="db96fd68-1" type="column" opts="{{opts}}" chartData="{{chartData}}" class="data-v-46c7defa" bind:__l="__l"></qiun-data-charts></view></view>
