@@ -100,7 +100,7 @@
             title: '金融支部',
           },
           {
-            url: '../../static/images/物联 网-物联网平台-面.png',
+            url: '../../static/images/物联网-物联网平台-面.png',
             title: '物联网支部',
           },
           {
@@ -108,7 +108,7 @@
             title: '软件支部',
           },
           {
-            url: '../../static/images/电信.png',
+            url: '../../static/images/电信3.png',
             title: '电信支部',
           },
           {

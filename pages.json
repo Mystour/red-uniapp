@@ -79,6 +79,13 @@
 				"navigationBarTitleText" : ""
 			}
 		},
+        {
+          "path" : "pages/memberCommunity/webview",
+          "style" : 
+          {
+            "navigationBarTitleText" : "支部风采"
+          }
+        },
 		{
 			"path" : "pages/memberData/memberData",
 			"style" : 

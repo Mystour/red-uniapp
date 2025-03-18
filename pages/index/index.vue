@@ -1,8 +1,8 @@
 <template>
 	<view class="content">
-<!-- 		<view class="schoolbag margin">
+		<view class="schoolbag margin">
 			<u-swiper :list="list1" keyName="image" showTitle indicator :autoplay="false" circular></u-swiper>
-		</view> -->
+		</view>
 		<view class="affairBag margin padding">
 			<navigator url="" class="topTitle padding">
 				<text class="jinnnang">党务锦囊</text>
@@ -71,29 +71,37 @@
 		data() {
 			return {
 				title: 'Hello',
-				list1: [{
-					image: 'https://cdn.uviewui.com/uview/swiper/swiper2.png',
-					title: '昨夜星辰昨夜风，画楼西畔桂堂东',
-				}, {
-					image: 'https://cdn.uviewui.com/uview/swiper/swiper1.png',
-					title: '身无彩凤双飞翼，心有灵犀一点通'
-				}, {
-					image: 'https://cdn.uviewui.com/uview/swiper/swiper3.png',
-					title: '谁念西风独自凉，萧萧黄叶闭疏窗，沉思往事立残阳'
-				}],
-				bagList: [{
-					listTitle: '英雄航天员景海鹏、朱杨柱和桂海潮',
-					listTime: '2022-2-3'
-				},{
-					listTitle: '英雄航天员景海鹏、朱杨柱和桂海潮',
-					listTime: '2022-2-3'
-				},{
-					listTitle: '英雄航天员景海鹏、朱杨柱和桂海潮word Time end of',
-					listTime: '2022-2-3'
-				},{
-					listTitle: '英雄航天员景海鹏、朱杨柱和桂海潮',
-					listTime: '2022-2-3'
-				},
+				list1: [
+					{
+						image: 'https://example.com/party_constitution_cover.jpg',
+						title: '党章与党规学习',
+					},
+					{
+						image: 'https://example.com/party_history_book_cover.jpg',
+						title: '党史与传统',
+					},
+					{
+						image: 'https://example.com/xi_jinping_speech.jpg',
+						title: '最新理论研究成果',
+					},
+				],
+				bagList: [
+					{
+						listTitle: '理解党的组织结构',
+						listTime: '2024-07-20'
+					},
+					{
+						listTitle: '党员权利与义务',
+						listTime: '2024-07-15'
+					},
+					{
+						listTitle: '最新中央委员会决议',
+						listTime: '2024-07-18'
+					},
+					{
+						listTitle: '党纪党规',
+						listTime: '2024-07-01'
+					},
 				]
 			}
 		},
