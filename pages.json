@@ -41,28 +41,28 @@
 			"path" : "pages/memberCommunity/help",
 			"style" : 
 			{
-				"navigationBarTitleText" : ""
+				"navigationBarTitleText" : "有求必应"
 			}
 		},
 		{
 			"path" : "pages/memberCommunity/young",
 			"style" : 
 			{
-				"navigationBarTitleText" : ""
+				"navigationBarTitleText" : "党员旗帜"
 			}
 		},
 		{
 			"path" : "pages/memberCommunity/suggestion",
 			"style" : 
 			{
-				"navigationBarTitleText" : ""
+				"navigationBarTitleText" : "发展共治"
 			}
 		},
 		{
 			"path" : "pages/memberCommunity/memberWall",
 			"style" : 
 			{
-				"navigationBarTitleText" : ""
+				"navigationBarTitleText" : "红色云墙"
 			}
 		},
 		{
@@ -86,6 +86,12 @@
             "navigationBarTitleText" : "支部堡垒"
           }
         },
+		{
+			"path": "pages/memberCommunity/massService",
+			"style": {
+			  "navigationBarTitleText": "我为群众办实事"
+			}
+		  },
 		{
 			"path" : "pages/memberData/memberData",
 			"style" : 
@@ -176,7 +182,13 @@
 				"pagePath": "pages/memberData/memberData",
 				"iconPath": "static/images/数据1.png",
 				"selectedIconPath": "static/images/数据.png"
-			}
+			},
+      {
+        "text": "我为群众办实事",
+        "pagePath": "pages/memberCommunity/massService",
+        "iconPath": "static/images/服务1.png",  // 替换为你想要的图标
+        "selectedIconPath": "static/images/服务.png" // 替换为你想要的选中状态图标
+      }
 		]
 	},
 	"globalStyle": {

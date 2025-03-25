@@ -99,7 +99,7 @@ export default {
     };
   },
   onLoad(options) {
-    // 从党员墙页面获取参数
+    // 从红色云墙页面获取参数
     if (options.helperName) {
       this.formData.helperName = options.helperName;
       this.formData.helperBranch = options.helperBranch
@@ -134,7 +134,7 @@ export default {
               // 发送通知（消息推送或短信） - 需后端配合
               this.sendNotification();
 
-              // 跳转到成功提示页或返回党员墙
+              // 跳转到成功提示页或返回红色云墙
               // uni.navigateTo({ url: '/pages/success' });
               uni.navigateBack();
             },
