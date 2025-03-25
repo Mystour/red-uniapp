@@ -6,7 +6,7 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "学习路上"
+				"navigationBarTitleText": "党建学习库"
 			}
 		},
 		// {
@@ -34,7 +34,7 @@
 			"path" : "pages/memberCommunity/memberCommunity",
 			"style" : 
 			{
-				"navigationBarTitleText" : "党员社群"
+				"navigationBarTitleText" : "红色风采"
 			}
 		},
 		{
@@ -83,7 +83,7 @@
           "path" : "pages/memberCommunity/webview",
           "style" : 
           {
-            "navigationBarTitleText" : "支部风采"
+            "navigationBarTitleText" : "支部堡垒"
           }
         },
 		{
@@ -160,13 +160,13 @@
 		"backgroundColor": "#fff",
 		"list": [
 			{
-				"text": "学习路上",
+				"text": "党建学习库",
 				"pagePath": "pages/index/index",
 				"iconPath": "static/images/首页1.png",
 				"selectedIconPath": "static/images/首页.png"
 			},
 			{
-				"text": "党员社群",
+				"text": "红色风采",
 				"pagePath": "pages/memberCommunity/memberCommunity",
 				"iconPath": "static/images/社区1.png",
 				"selectedIconPath": "static/images/社区.png"

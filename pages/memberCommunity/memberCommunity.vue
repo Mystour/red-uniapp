@@ -1,13 +1,13 @@
 <template>
   <view>
-    <!-- <h1>党员社群</h1> -->
+    <!-- <h1>红色风采</h1> -->
     <view class="">
       <view class="underline-text">服务模块</view>
       <view class="flex-box">
         <view class="partyBox" @click="toYoung">
           <view class="text-container">
             <!-- 新增的容器 -->
-            <text class="flex-text">“YOUNG”风采</text>
+            <text class="flex-text">党员旗帜</text>
           </view>
           <image src="../../static/images/员工风采.png" mode=""></image>
         </view>
@@ -38,7 +38,7 @@
       <!-- <view class="underline-text">支部风采</view> -->
       <view class="branchDeed margin padding">
         <navigator url="" class="topTitle padding">
-          <text class="title-text">支部风采</text>
+          <text class="title-text">支部堡垒</text>
           <view class="rightBox">
             <text class="more">查看更多</text>
             <image src="/static/images/zhe.png" alt="" class="rightLabel" />
