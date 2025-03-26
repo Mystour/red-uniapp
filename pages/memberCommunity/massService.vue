@@ -70,41 +70,72 @@ export default {
 }
 
 .flex-box {
-  margin: 30rpx 0rpx;
+  margin: 30rpx 15rpx; /* 给容器加左右边距 */
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between; /* 让前两个元素靠两边 */
 }
 
 .partyBox {
   border-radius: 10rpx;
-  width: 330rpx;
+  width: calc(50% - 15rpx); /* 计算宽度，占满一半减去间距 */
   height: 180rpx;
   background-color: #fff;
   padding: 15rpx 10rpx;
-  margin: 10rpx;
+  margin-bottom: 30rpx; /* 只保留下边距 */
   display: flex;
   align-items: center;
+  box-sizing: border-box; /* 让 padding 和 border 包含在宽度内 */
+}
+
+/* 单独设置第三个元素的样式 */
+.partyBox:nth-child(3) {
+  width: 100%; /* 第三个元素占满整行 */
+  margin-left: 0;
+  margin-right: 0;
+  /* 修改这里：让内部元素水平分布，而不是默认的居中 */
+  justify-content: flex-start; /* 或者 space-around / space-between，根据想要的效果调整 */
+   padding-left: 200rpx; /* 可以添加一些左内边距让它不那么靠左 */
+   padding-right: 50rpx; /* 可以添加一些右内边距 */
 }
 
 .partyBox .text-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: flex-start; /* 默认文字左对齐 */
   margin-left: 20rpx;
-  width: 150rpx;
+  /* width: 150rpx; */ /* 不固定宽度，让其自适应 */
+   flex: 1; /* 让文本容器占据更多空间 */
 }
+
+/* 单独设置第三个元素内部文本容器的样式 */
+.partyBox:nth-child(3) .text-container {
+   align-items: flex-start; /* 确保第三个的文字也是左对齐 */
+   margin-left: 20rpx; /* 保持或调整左边距 */
+   flex: none; /* 取消flex:1, 避免过度拉伸 */
+   width: auto; /* 或者设置一个合适的宽度，例如 150rpx */
+}
+
 
 .partyBox image {
   width: 100rpx;
   height: 100rpx;
-  position: relative;
-  margin-left: auto;
+  /* position: relative; */ /* 移除相对定位 */
+  margin-left: auto; /* 图片自动靠右 */
   margin-right: 30rpx;
+  flex-shrink: 0; /* 防止图片被压缩 */
 }
 
-.flex-text {
-  font-size: 26rpx;
+/* 单独设置第三个元素内部图片的样式 */
+.partyBox:nth-child(3) image {
+    margin-left: auto; /* 保持图片靠右 */
+    margin-right: 30rpx; /* 保持右边距 */
 }
+
+
+.flex-text {
+  font-size: 35rpx;
+}
+
 </style>

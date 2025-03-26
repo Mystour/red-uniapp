@@ -141,30 +141,54 @@
           }
         },
         chartData2: {},
-        opts2: {
-          color: ["#1890FF", "#91CB74", "#FAC858", "#EE6666", "#73C0DE", "#3CA272", "#FC8452", "#9A60B4",
-            "#ea7ccc"
-          ],
-          padding: [15, 15, 0, 5],
-          enableScroll: false,
-          legend: {},
-          xAxis: {
-            disableGrid: true
-          },
-          yAxis: {
-            data: [{
-              min: 0
-            }]
-          },
-          extra: {
-            column: {
-              type: "group",
-              width: 30,
-              activeBgColor: "#000000",
-              activeBgOpacity: 0.08
-            }
-          }
-        },
+		opts2: {
+		  color: ["#1890FF", "#91CB74", "#FAC858", "#EE6666", "#73C0DE", "#3CA272", "#FC8452", "#9A60B4",
+			"#ea7ccc"
+		  ],
+		  padding: [15, 15, 0, 5],
+		  enableScroll: false,
+		  legend: {},
+		  xAxis: {
+			disableGrid: true
+		  },
+		  yAxis: {
+			data: [{
+			  min: 0
+			}]
+		  },
+		  extra: {
+			column: {
+			  type: "group",
+			  width: 30,
+			  activeBgColor: "#000000",
+			  activeBgOpacity: 0.08
+			},
+			// --- 添加或修改 tooltip 配置 ---
+			tooltip: {
+			  format: function (item, category) {
+				if (typeof item.data === 'object' && item.data !== null) {
+					// 如果是对象格式的数据，根据需要处理
+					 let value = item.data.value !== null ? item.data.value : 0;
+					 if (item.seriesName === '优秀率') {
+						 return category + ' ' + item.seriesName + ': ' + (value * 100).toFixed(1) + '%';
+					 } else {
+						 return category + ' ' + item.seriesName + ': ' + value;
+					 }
+				} else {
+					 let value = item.data !== null ? item.data : 0;
+					 if (item.seriesName === '优秀率') {
+						// 如果系列名称是“优秀率”，则乘以100并添加百分号
+						 return category + ' ' + item.seriesName + ': ' + (value * 100).toFixed(1) + '%';
+					 } else {
+						 // 其他系列正常显示
+						 return category + ' ' + item.seriesName + ': ' + value;
+					 }
+				}
+			  }
+			}
+			// --- tooltip 配置结束 ---
+		  }
+		},
         chartData3: {},
         opts3: {
           color: ["#1890FF", "#91CB74", "#FAC858", "#EE6666", "#73C0DE", "#3CA272", "#FC8452", "#9A60B4",
@@ -403,17 +427,18 @@
           };
           this.chartData1 = JSON.parse(JSON.stringify(res1));
 
+          // --- 修改 res2 ---
           let res2 = {
             categories: ["金融", "物联网", "软件工程", "电信"],
             series: [
               {
                 name: "平均绩点",
                 data: [3.6, 3.4, 3.7, 3.5]
-              },
-              {
-                name: "优秀率",
-                data: [0.4, 0.3, 0.45, 0.35]
               }
+              // { // 将“优秀率”的数据注释掉或删除
+              //   name: "优秀率",
+              //   data: [0.4, 0.3, 0.45, 0.35]
+              // }
             ]
           };
           this.chartData2 = JSON.parse(JSON.stringify(res2));
