@@ -186,8 +186,8 @@
       {
         "text": "我为群众办实事",
         "pagePath": "pages/memberCommunity/massService",
-        "iconPath": "static/images/服务1.png",  // 替换为你想要的图标
-        "selectedIconPath": "static/images/服务.png" // 替换为你想要的选中状态图标
+        "iconPath": "static/images/群众办实事.png",  // 替换为你想要的图标
+        "selectedIconPath": "static/images/群众办实事.png" // 替换为你想要的选中状态图标
       }
 		]
 	},
