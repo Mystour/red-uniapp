@@ -4344,25 +4344,19 @@ var render = function () {
         "uni-view",
         { attrs: { _i: 1 } },
         [
-          _c("uni-view", { staticClass: _vm._$g(2, "sc"), attrs: { _i: 2 } }, [
-            _vm._v("服务模块"),
-          ]),
           _c(
             "uni-view",
-            { staticClass: _vm._$g(3, "sc"), attrs: { _i: 3 } },
+            { staticClass: _vm._$g(2, "sc"), attrs: { _i: 2 } },
             [
               _c(
-                "uni-view",
-                {
-                  staticClass: _vm._$g(4, "sc"),
-                  attrs: { _i: 4 },
-                  on: {
-                    click: function ($event) {
-                      return _vm.$handleViewEvent($event)
-                    },
-                  },
-                },
+                "v-uni-navigator",
+                { staticClass: _vm._$g(3, "sc"), attrs: { _i: 3 } },
                 [
+                  _c(
+                    "v-uni-text",
+                    { staticClass: _vm._$g(4, "sc"), attrs: { _i: 4 } },
+                    [_vm._v("支部堡垒")]
+                  ),
                   _c(
                     "uni-view",
                     { staticClass: _vm._$g(5, "sc"), attrs: { _i: 5 } },
@@ -4370,55 +4364,14 @@ var render = function () {
                       _c(
                         "v-uni-text",
                         { staticClass: _vm._$g(6, "sc"), attrs: { _i: 6 } },
-                        [_vm._v("党员旗帜")]
-                      ),
-                    ],
-                    1
-                  ),
-                  _c("v-uni-image", {
-                    attrs: { src: _vm._$g(7, "a-src"), mode: "", _i: 7 },
-                  }),
-                ],
-                1
-              ),
-            ],
-            1
-          ),
-        ],
-        1
-      ),
-      _c(
-        "uni-view",
-        { attrs: { _i: 8 } },
-        [
-          _c(
-            "uni-view",
-            { staticClass: _vm._$g(9, "sc"), attrs: { _i: 9 } },
-            [
-              _c(
-                "v-uni-navigator",
-                { staticClass: _vm._$g(10, "sc"), attrs: { _i: 10 } },
-                [
-                  _c(
-                    "v-uni-text",
-                    { staticClass: _vm._$g(11, "sc"), attrs: { _i: 11 } },
-                    [_vm._v("支部堡垒")]
-                  ),
-                  _c(
-                    "uni-view",
-                    { staticClass: _vm._$g(12, "sc"), attrs: { _i: 12 } },
-                    [
-                      _c(
-                        "v-uni-text",
-                        { staticClass: _vm._$g(13, "sc"), attrs: { _i: 13 } },
                         [_vm._v("查看更多")]
                       ),
                       _c("v-uni-image", {
-                        staticClass: _vm._$g(14, "sc"),
+                        staticClass: _vm._$g(7, "sc"),
                         attrs: {
                           src: "/static/images/zhe.png",
                           alt: "",
-                          _i: 14,
+                          _i: 7,
                         },
                       }),
                     ],
@@ -4429,14 +4382,14 @@ var render = function () {
               ),
               _c(
                 "uni-view",
-                { staticClass: _vm._$g(15, "sc"), attrs: { _i: 15 } },
-                _vm._l(_vm._$g(16, "f"), function (article, index, $20, $30) {
+                { staticClass: _vm._$g(8, "sc"), attrs: { _i: 8 } },
+                _vm._l(_vm._$g(9, "f"), function (article, index, $20, $30) {
                   return _c(
                     "uni-view",
                     {
                       key: article,
-                      staticClass: _vm._$g("16-" + $30, "sc"),
-                      attrs: { _i: "16-" + $30 },
+                      staticClass: _vm._$g("9-" + $30, "sc"),
+                      attrs: { _i: "9-" + $30 },
                       on: {
                         click: function ($event) {
                           return _vm.$handleViewEvent($event)
@@ -4447,15 +4400,15 @@ var render = function () {
                       _c(
                         "uni-view",
                         {
-                          staticClass: _vm._$g("17-" + $30, "sc"),
-                          attrs: { _i: "17-" + $30 },
+                          staticClass: _vm._$g("10-" + $30, "sc"),
+                          attrs: { _i: "10-" + $30 },
                         },
                         [
                           _c("v-uni-image", {
                             attrs: {
-                              src: _vm._$g("18-" + $30, "a-src"),
+                              src: _vm._$g("11-" + $30, "a-src"),
                               mode: "aspectFill",
-                              _i: "18-" + $30,
+                              _i: "11-" + $30,
                             },
                           }),
                         ],
@@ -4464,32 +4417,32 @@ var render = function () {
                       _c(
                         "uni-view",
                         {
-                          staticClass: _vm._$g("19-" + $30, "sc"),
-                          attrs: { _i: "19-" + $30 },
+                          staticClass: _vm._$g("12-" + $30, "sc"),
+                          attrs: { _i: "12-" + $30 },
                         },
                         [
                           _c(
                             "v-uni-text",
                             {
-                              staticClass: _vm._$g("20-" + $30, "sc"),
-                              attrs: { _i: "20-" + $30 },
+                              staticClass: _vm._$g("13-" + $30, "sc"),
+                              attrs: { _i: "13-" + $30 },
                             },
-                            [_vm._v(_vm._$g("20-" + $30, "t0-0"))]
+                            [_vm._v(_vm._$g("13-" + $30, "t0-0"))]
                           ),
                           _c(
                             "uni-view",
                             {
-                              staticClass: _vm._$g("21-" + $30, "sc"),
-                              attrs: { _i: "21-" + $30 },
+                              staticClass: _vm._$g("14-" + $30, "sc"),
+                              attrs: { _i: "14-" + $30 },
                             },
                             [
                               _c(
                                 "v-uni-text",
                                 {
-                                  staticClass: _vm._$g("22-" + $30, "sc"),
-                                  attrs: { _i: "22-" + $30 },
+                                  staticClass: _vm._$g("15-" + $30, "sc"),
+                                  attrs: { _i: "15-" + $30 },
                                 },
-                                [_vm._v(_vm._$g("22-" + $30, "t0-0"))]
+                                [_vm._v(_vm._$g("15-" + $30, "t0-0"))]
                               ),
                             ],
                             1
@@ -4511,36 +4464,36 @@ var render = function () {
       ),
       _c(
         "uni-view",
-        { attrs: { _i: 23 } },
+        { attrs: { _i: 16 } },
         [
           _c(
             "uni-view",
-            { staticClass: _vm._$g(24, "sc"), attrs: { _i: 24 } },
+            { staticClass: _vm._$g(17, "sc"), attrs: { _i: 17 } },
             [
               _c(
                 "v-uni-navigator",
-                { staticClass: _vm._$g(25, "sc"), attrs: { _i: 25 } },
+                { staticClass: _vm._$g(18, "sc"), attrs: { _i: 18 } },
                 [
                   _c(
                     "v-uni-text",
-                    { staticClass: _vm._$g(26, "sc"), attrs: { _i: 26 } },
-                    [_vm._v("时代前哨")]
+                    { staticClass: _vm._$g(19, "sc"), attrs: { _i: 19 } },
+                    [_vm._v("党员旗帜")]
                   ),
                   _c(
                     "uni-view",
-                    { staticClass: _vm._$g(27, "sc"), attrs: { _i: 27 } },
+                    { staticClass: _vm._$g(20, "sc"), attrs: { _i: 20 } },
                     [
                       _c(
                         "v-uni-text",
-                        { staticClass: _vm._$g(28, "sc"), attrs: { _i: 28 } },
+                        { staticClass: _vm._$g(21, "sc"), attrs: { _i: 21 } },
                         [_vm._v("查看更多")]
                       ),
                       _c("v-uni-image", {
-                        staticClass: _vm._$g(29, "sc"),
+                        staticClass: _vm._$g(22, "sc"),
                         attrs: {
                           src: "/static/images/zhe.png",
                           alt: "",
-                          _i: 29,
+                          _i: 22,
                         },
                       }),
                     ],
@@ -4551,14 +4504,14 @@ var render = function () {
               ),
               _c(
                 "uni-view",
-                { staticClass: _vm._$g(30, "sc"), attrs: { _i: 30 } },
-                _vm._l(_vm._$g(31, "f"), function (article, index, $21, $31) {
+                { staticClass: _vm._$g(23, "sc"), attrs: { _i: 23 } },
+                _vm._l(_vm._$g(24, "f"), function (article, index, $21, $31) {
                   return _c(
                     "uni-view",
                     {
                       key: article,
-                      staticClass: _vm._$g("31-" + $31, "sc"),
-                      attrs: { _i: "31-" + $31 },
+                      staticClass: _vm._$g("24-" + $31, "sc"),
+                      attrs: { _i: "24-" + $31 },
                       on: {
                         click: function ($event) {
                           return _vm.$handleViewEvent($event)
@@ -4569,15 +4522,15 @@ var render = function () {
                       _c(
                         "uni-view",
                         {
-                          staticClass: _vm._$g("32-" + $31, "sc"),
-                          attrs: { _i: "32-" + $31 },
+                          staticClass: _vm._$g("25-" + $31, "sc"),
+                          attrs: { _i: "25-" + $31 },
                         },
                         [
                           _c("v-uni-image", {
                             attrs: {
-                              src: _vm._$g("33-" + $31, "a-src"),
+                              src: _vm._$g("26-" + $31, "a-src"),
                               mode: "aspectFill",
-                              _i: "33-" + $31,
+                              _i: "26-" + $31,
                             },
                           }),
                         ],
@@ -4586,32 +4539,32 @@ var render = function () {
                       _c(
                         "uni-view",
                         {
-                          staticClass: _vm._$g("34-" + $31, "sc"),
-                          attrs: { _i: "34-" + $31 },
+                          staticClass: _vm._$g("27-" + $31, "sc"),
+                          attrs: { _i: "27-" + $31 },
                         },
                         [
                           _c(
                             "v-uni-text",
                             {
-                              staticClass: _vm._$g("35-" + $31, "sc"),
-                              attrs: { _i: "35-" + $31 },
+                              staticClass: _vm._$g("28-" + $31, "sc"),
+                              attrs: { _i: "28-" + $31 },
                             },
-                            [_vm._v(_vm._$g("35-" + $31, "t0-0"))]
+                            [_vm._v(_vm._$g("28-" + $31, "t0-0"))]
                           ),
                           _c(
                             "uni-view",
                             {
-                              staticClass: _vm._$g("36-" + $31, "sc"),
-                              attrs: { _i: "36-" + $31 },
+                              staticClass: _vm._$g("29-" + $31, "sc"),
+                              attrs: { _i: "29-" + $31 },
                             },
                             [
                               _c(
                                 "v-uni-text",
                                 {
-                                  staticClass: _vm._$g("37-" + $31, "sc"),
-                                  attrs: { _i: "37-" + $31 },
+                                  staticClass: _vm._$g("30-" + $31, "sc"),
+                                  attrs: { _i: "30-" + $31 },
                                 },
-                                [_vm._v(_vm._$g("37-" + $31, "t0-0"))]
+                                [_vm._v(_vm._$g("30-" + $31, "t0-0"))]
                               ),
                             ],
                             1
@@ -4729,7 +4682,7 @@ if(false) {}
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../software/HBuilderX/plugins/uniapp-cli/node_modules/css-loader/dist/runtime/api.js */ 16);
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "\n.underline-text[data-v-c693db94] {\n  position: relative;\n  line-height: 60rpx;\n  margin: 20rpx 10rpx 10rpx 10rpx;\n  display: inline-block;\n}\n\n/* 使用伪元素添加下划线 */\n.underline-text[data-v-c693db94]::after {\n  content: '';\n  position: absolute;\n  bottom: 0;\n  left: 0;\n  width: 100%;\n  height: 13rpx;\n  opacity: 25%;\n  padding: 10rpx 0rpx 5rpx 0rpx;\n  margin-left: 20rpx;\n  width: 150rpx;\n  background-color: red;\n}\n.flex-box[data-v-c693db94] {\n  margin: 30rpx 0rpx;\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: center;\n}\n.partyBox[data-v-c693db94] {\n  border-radius: 10rpx;\n  width: 330rpx;\n  height: 180rpx;\n  background-color: #fff;\n  padding: 15rpx 10rpx;\n  margin: 10rpx;\n  display: flex;\n  align-items: center;\n}\n.partyBox .text-container[data-v-c693db94] {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: flex-start;\n  margin-left: 20rpx;\n  width: 150rpx;\n}\n.partyBox uni-image[data-v-c693db94] {\n  width: 100rpx;\n  height: 100rpx;\n  position: relative;\n  margin-left: auto;\n  margin-right: 30rpx;\n}\n.flex-text[data-v-c693db94] {\n  font-size: 26rpx;\n}\n.rightBox[data-v-c693db94] {\n  float: right;\n}\n.branchDeed .more[data-v-c693db94] {\n  font-size: 26rpx;\n}\n.branchDeed .title-text[data-v-c693db94] {\n  font-size: 32rpx;\n  font-weight: 1000;\n}\n.branchDeed .rightLabel[data-v-c693db94] {\n  vertical-align: middle;\n  width: 26rpx;\n  height: 26rpx;\n  margin: 0;\n}\n.branchDeed .more[data-v-c693db94] {\n  font-size: 28rpx;\n  margin-right: 2rpx;\n  color: #E2E2E2;\n}\n.margin[data-v-c693db94] {\n  margin: 70rpx 30rpx;\n}\n.padding[data-v-c693db94] {\n  padding: 15rpx 20rpx;\n}\n.branchDeed[data-v-c693db94] {\n  background-color: white;\n  border-radius: 15rpx;\n}\n.branchDeed .listMsg[data-v-c693db94] {\n  line-height: 200rpx;\n  border-bottom: 1rpx solid #f3f3f3;\n}\n.branchDeed .listMsg[data-v-c693db94] {\n  margin: 10rpx 0rpx;\n  display: flex;\n}\n.listMsg .image[data-v-c693db94] {\n  margin: 10rpx 20rpx;\n  width: 220rpx;\n  height: 160rpx;\n}\n.listMsg .listTitle[data-v-c693db94] {\n  font-size: 28rpx;\n  font-weight: 800;\n  line-height: 50rpx;\n  overflow: hidden;\n  display: -webkit-box;\n  -webkit-line-clamp: 2;\n  -webkit-box-orient: vertical;\n}\n.listMsg uni-image[data-v-c693db94] {\n  width: 100%;\n  height: 100%;\n  border-radius: 8rpx;\n}\n.listMsg .viewText[data-v-c693db94] {\n  width: 360rpx;\n  height: 100rpx;\n  color: #6f6f6f;\n  margin-top: 10rpx;\n  padding: 10rpx;\n  height: 160rpx;\n  overflow: hidden;\n}\n.listMsg .viewTime[data-v-c693db94] {\n  font-size: 24rpx;\n  color: #cbcbcb;\n  position: relative;\n  left: 220rpx;\n  bottom: 70rpx;\n}\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* 样式部分保持不变 */\n.underline-text[data-v-c693db94] {\n  position: relative;\n  line-height: 60rpx;\n  margin: 20rpx 10rpx 10rpx 10rpx;\n  display: inline-block;\n}\n/* 使用伪元素添加下划线 */\n.underline-text[data-v-c693db94]::after {\n  content: '';\n  position: absolute;\n  bottom: 0;\n  left: 0;\n  width: 100%;\n  height: 13rpx;\n  opacity: 25%;\n  padding: 10rpx 0rpx 5rpx 0rpx;\n  margin-left: 20rpx;\n  width: 150rpx;\n  background-color: red;\n}\n.flex-box[data-v-c693db94] {\n  margin: 30rpx 0rpx;\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: center;\n}\n.partyBox[data-v-c693db94] {\n  border-radius: 10rpx;\n  width: 330rpx;\n  height: 180rpx;\n  background-color: #fff;\n  padding: 15rpx 10rpx;\n  margin: 10rpx;\n  display: flex;\n  align-items: center;\n}\n.partyBox .text-container[data-v-c693db94] {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: flex-start;\n  margin-left: 20rpx;\n  width: 150rpx;\n}\n.partyBox uni-image[data-v-c693db94] {\n  width: 100rpx;\n  height: 100rpx;\n  position: relative;\n  margin-left: auto;\n  margin-right: 30rpx;\n}\n.flex-text[data-v-c693db94] {\n  font-size: 26rpx;\n}\n.rightBox[data-v-c693db94] {\n  float: right;\n}\n.branchDeed .more[data-v-c693db94] {\n  font-size: 26rpx;\n}\n.branchDeed .title-text[data-v-c693db94] {\n  font-size: 32rpx;\n  font-weight: 1000;\n}\n.branchDeed .rightLabel[data-v-c693db94] {\n  vertical-align: middle;\n  width: 26rpx;\n  height: 26rpx;\n  margin: 0;\n}\n.branchDeed .more[data-v-c693db94] {\n  font-size: 28rpx;\n  margin-right: 2rpx;\n  color: #E2E2E2;\n}\n.margin[data-v-c693db94] {\n  margin: 70rpx 30rpx;\n}\n.padding[data-v-c693db94] {\n  padding: 15rpx 20rpx;\n}\n.branchDeed[data-v-c693db94] {\n  background-color: white;\n  border-radius: 15rpx;\n}\n.branchDeed .listMsg[data-v-c693db94] {\n  line-height: 200rpx;\n  border-bottom: 1rpx solid #f3f3f3;\n}\n.branchDeed .listMsg[data-v-c693db94] {\n  margin: 10rpx 0rpx;\n  display: flex;\n}\n.listMsg .image[data-v-c693db94] {\n  margin: 10rpx 20rpx;\n  width: 220rpx;\n  height: 160rpx;\n}\n.listMsg .listTitle[data-v-c693db94] {\n  font-size: 28rpx;\n  font-weight: 800;\n  line-height: 50rpx;\n  overflow: hidden;\n  display: -webkit-box;\n  -webkit-line-clamp: 2;\n  -webkit-box-orient: vertical;\n}\n.listMsg uni-image[data-v-c693db94] {\n  width: 100%;\n  height: 100%;\n  border-radius: 8rpx;\n}\n.listMsg .viewText[data-v-c693db94] {\n  width: 360rpx;\n  height: 100rpx;\n  color: #6f6f6f;\n  margin-top: 10rpx;\n  padding: 10rpx;\n  height: 160rpx;\n  overflow: hidden;\n}\n.listMsg .viewTime[data-v-c693db94] {\n  font-size: 24rpx;\n  color: #cbcbcb;\n  position: relative;\n  left: 220rpx;\n  bottom: 70rpx;\n}\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -10070,8 +10023,8 @@ __webpack_require__.r(__webpack_exports__);
 var components
 try {
   components = {
-    uPicker: __webpack_require__(/*! uview-ui/components/u-picker/u-picker.vue */ 243).default,
     uButton: __webpack_require__(/*! uview-ui/components/u-button/u-button.vue */ 142).default,
+    uPicker: __webpack_require__(/*! uview-ui/components/u-picker/u-picker.vue */ 243).default,
     uTag: __webpack_require__(/*! uview-ui/components/u-tag/u-tag.vue */ 259).default,
     uActionSheet:
       __webpack_require__(/*! uview-ui/components/u-action-sheet/u-action-sheet.vue */ 150).default,
@@ -10099,14 +10052,41 @@ var render = function () {
   var _c = _vm._self._c || _h
   return _c(
     "uni-view",
-    { attrs: { _i: 0 } },
+    { staticClass: _vm._$g(0, "sc"), attrs: { _i: 0 } },
     [
       _c(
         "uni-view",
         { staticClass: _vm._$g(1, "sc"), attrs: { _i: 1 } },
         [
+          _c(
+            "u-button",
+            {
+              attrs: { _i: 2 },
+              on: {
+                click: function ($event) {
+                  return _vm.$handleViewEvent($event)
+                },
+              },
+            },
+            [_vm._v(_vm._$g(2, "t0-0"))]
+          ),
+          _vm._$g(3, "i")
+            ? _c(
+                "u-button",
+                {
+                  staticStyle: { "margin-left": "10rpx" },
+                  attrs: { _i: 3 },
+                  on: {
+                    click: function ($event) {
+                      return _vm.$handleViewEvent($event)
+                    },
+                  },
+                },
+                [_vm._v("重置")]
+              )
+            : _vm._e(),
           _c("u-picker", {
-            attrs: { _i: 2 },
+            attrs: { _i: 4 },
             on: {
               confirm: function ($event) {
                 return _vm.$handleViewEvent($event)
@@ -10119,33 +10099,6 @@ var render = function () {
               },
             },
           }),
-          _c(
-            "u-button",
-            {
-              attrs: { _i: 3 },
-              on: {
-                click: function ($event) {
-                  return _vm.$handleViewEvent($event)
-                },
-              },
-            },
-            [_vm._v(_vm._$g(3, "t0-0"))]
-          ),
-          _vm._$g(4, "i")
-            ? _c(
-                "u-button",
-                {
-                  staticStyle: { "margin-left": "10rpx" },
-                  attrs: { _i: 4 },
-                  on: {
-                    click: function ($event) {
-                      return _vm.$handleViewEvent($event)
-                    },
-                  },
-                },
-                [_vm._v("重置")]
-              )
-            : _vm._e(),
         ],
         1
       ),
@@ -10162,6 +10115,7 @@ var render = function () {
             },
             [
               _c("v-uni-image", {
+                staticClass: _vm._$g("7-" + $30, "sc"),
                 attrs: {
                   src: _vm._$g("7-" + $30, "a-src"),
                   mode: "aspectFill",
@@ -10260,6 +10214,7 @@ var render = function () {
                   _c(
                     "u-button",
                     {
+                      staticClass: _vm._$g("16-" + $30, "sc"),
                       attrs: { _i: "16-" + $30 },
                       on: {
                         click: function ($event) {
@@ -11218,7 +11173,7 @@ if(false) {}
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../software/HBuilderX/plugins/uniapp-cli/node_modules/css-loader/dist/runtime/api.js */ 16);
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "\n.picker[data-v-30c393a6] {\n\tpadding: 20rpx;\n\tbackground-color: #F0F9FF;\n\t/* 淡蓝色背景 */\n}\n.member-card[data-v-30c393a6] {\n\tdisplay: flex;\n\tbackground-color: #FFFFFF;\n\t/* 白色卡片 */\n\tpadding: 20rpx;\n\tmargin-bottom: 20rpx;\n\tborder-radius: 10rpx;\n\tbox-shadow: 0 2rpx 5rpx rgba(0, 0, 0, 0.1);\n\t/* 增加阴影 */\n}\n.member-card uni-image[data-v-30c393a6] {\n\twidth: 150rpx;\n\theight: 150rpx;\n\tborder-radius: 50%;\n\t/* 圆形头像 */\n\tmargin-right: 20rpx;\n}\n.member-info[data-v-30c393a6] {\n\tflex: 1;\n\tdisplay: flex;\n\t/* 使用flex布局 */\n\tflex-direction: column;\n\t/* 垂直排列 */\n}\n.name[data-v-30c393a6] {\n\tfont-size: 32rpx;\n\tfont-weight: bold;\n\tcolor: #1976D2;\n\t/* 深蓝色姓名 */\n}\n.info[data-v-30c393a6] {\n\tfont-size: 28rpx;\n\tcolor: #666666;\n\t/* 深灰色支部/职位 */\n\tmargin-top: 10rpx;\n}\n.bio[data-v-30c393a6] {\n\tfont-size: 24rpx;\n\tcolor: #999999;\n\t/* 浅灰色简介 */\n\tmargin-top: 15rpx;\n\tline-height: 1.5;\n}\n.expand-btn[data-v-30c393a6] {\n\tcolor: #1976D2;\n\t/* 蓝色展开/收起按钮 */\n\tmargin-top: 5rpx;\n\tfont-size: 24rpx;\n\ttext-align: right;\n}\n\n/* 按钮样式 */\n.u-button--primary[data-v-30c393a6] {\n\tbackground-color: #2196F3;\n\t/* 蓝色按钮 */\n\tborder-color: #2196F3;\n}\n\n/* 技能标签容器样式 */\n.skills-container[data-v-30c393a6] {\n\tdisplay: flex;\n\tflex-wrap: wrap;\n\t/* 允许换行 */\n\tmargin-top: 10rpx;\n}\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n    /* 整体容器背景 */\n.party-wall-container[data-v-30c393a6] {\n        background-color: #F5F5F5; /* 浅灰色背景 */\n        min-height: 100vh; /* 确保至少占满屏幕 */\n}\n.picker[data-v-30c393a6] {\n\t\tpadding: 20rpx;\n\t\tbackground-color: #FDE2E2; /* 淡红色背景 */\n        border-bottom: 1px solid #f0f0f0; /* 添加分隔线 */\n        display: flex; /* 让按钮横向排列 */\n        align-items: center; /* 垂直居中 */\n}\n    /* 选择按钮自定义样式 */\n.picker[data-v-30c393a6] .u-button { /* 可能需要使用深度选择器 >>> */\n        /* background-color: #fff !important;\n        color: #D81E06 !important;\n        border: 1px solid #D81E06 !important; */\n        margin-right: 10rpx; /* 增加按钮间距 */\n}\n    /* 重置按钮 */\n.picker[data-v-30c393a6] .u-button--error.is-plain { /* 确保能选中 plain 状态的 error 按钮 */\n        color: #D81E06 !important;\n        border-color: #D81E06 !important;\n        background-color: #fef0f0 !important; /* uview plain error 的背景色 */\n}\n.member-card[data-v-30c393a6] {\n\t\tdisplay: flex;\n\t\tbackground-color: #FFFFFF; /* 白色卡片 */\n\t\tpadding: 30rpx; /* 增加内边距 */\n\t\tmargin: 20rpx; /* 调整外边距 */\n\t\tborder-radius: 16rpx; /* 更圆润的边角 */\n\t\tbox-shadow: 0 4rpx 12rpx rgba(0, 0, 0, 0.08); /* 稍微调整阴影 */\n        border: 1px solid #FCE2E2; /* 添加非常淡的红色边框 */\n}\n.avatar[data-v-30c393a6] { /* 给头像添加class，方便样式控制 */\n\t\twidth: 120rpx; /* 稍微缩小头像 */\n\t\theight: 120rpx;\n\t\tborder-radius: 50%;\n\t\tmargin-right: 30rpx; /* 增加与右侧信息的间距 */\n        border: 2px solid #eee; /* 给头像加个灰色边框 */\n}\n.member-info[data-v-30c393a6] {\n\t\tflex: 1;\n\t\tdisplay: flex;\n\t\tflex-direction: column;\n}\n.name[data-v-30c393a6] {\n\t\tfont-size: 34rpx; /* 增大姓名 */\n\t\tfont-weight: bold;\n\t\tcolor: #D81E06; /* 党建红 */\n}\n.info[data-v-30c393a6] {\n\t\tfont-size: 26rpx; /* 缩小一点 */\n\t\tcolor: #666666;\n\t\tmargin-top: 8rpx; /* 调整间距 */\n}\n.bio[data-v-30c393a6] {\n\t\tfont-size: 26rpx; /* 增大一点简介 */\n\t\tcolor: #888888; /* 稍微加深简介颜色 */\n\t\tmargin-top: 20rpx;\n\t\tline-height: 1.6; /* 增加行高 */\n}\n.expand-btn[data-v-30c393a6] {\n\t\tcolor: #E53935; /* 使用稍浅一点的红色 */\n\t\tmargin-top: 10rpx;\n\t\tfont-size: 24rpx;\n\t\ttext-align: right;\n\t\talign-self: flex-end; /* 确保按钮在右侧 */\n}\n    /* 技能标签容器样式 */\n.skills-container[data-v-30c393a6] {\n\t\tdisplay: flex;\n\t\tflex-wrap: wrap;\n\t\tmargin-top: 15rpx; /* 调整间距 */\n        margin-bottom: 15rpx; /* 增加与求助按钮的间距 */\n}\n    /* u-tag 已经在 template 中通过 type=\"error\" plain 设置了党建风格 */\n    /* 求助按钮 */\n.help-button[data-v-30c393a6] {\n       align-self: flex-end; /* 按钮靠右 */\n       margin-top: auto; /* 将按钮推到底部（如果希望的话） */\n       /* 如果 uview 的 type=\"error\" 颜色不符合，可以自定义 */\n       /* background-color: #D81E06 !important;\n       border-color: #D81E06 !important; */\n       /* color: #fff !important; */\n       /* padding: 4rpx 16rpx !important; */ /* 微调按钮大小 */\n}\n", ""]);
 // Exports
 module.exports = exports;
 

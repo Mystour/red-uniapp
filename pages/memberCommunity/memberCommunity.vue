@@ -1,19 +1,16 @@
 <template>
   <view>
-    <view class="">
+    <!-- 服务模块区域现在为空，如果你不需要这个标题也可以删掉 -->
+    <!-- <view class="">
       <view class="underline-text">服务模块</view>
       <view class="flex-box">
-        <view class="partyBox" @click="toYoung">
-          <view class="text-container">
-            <text class="flex-text">党员旗帜</text>
-          </view>
-          <image src="../../static/images/员工风采.png" mode=""></image>
-        </view>
+         这里原来是党员旗帜的入口，已移除
       </view>
-    </view>
+    </view> -->
 
+    <!-- 支部堡垒 Section -->
     <view class="">
-      <view class="branchDeed margin padding">
+      <view class="branchDeed margin padding"> 
         <navigator class="topTitle padding">
           <text class="title-text">支部堡垒</text>
           <view class="rightBox">
@@ -22,7 +19,8 @@
           </view>
         </navigator>
         <view class="bagList">
-          <view class="listMsg" v-for="(article, index) in articles" :key="index" @click="goToArticle(article.url)">
+          <!-- 支部堡垒文章列表 -->
+          <view class="listMsg" v-for="(article, index) in fortressArticles" :key="'fortress-'+index" @click="goToArticle(article.url)">
             <view class="image">
               <image :src="article.image" mode="aspectFill"></image>
             </view>
@@ -36,17 +34,21 @@
         </view>
       </view>
     </view>
- <view class="">
+
+    <!-- 党员旗帜 Section (原 时代前哨) -->
+    <view class="">
       <view class="branchDeed margin padding">
         <navigator class="topTitle padding">
-          <text class="title-text">时代前哨</text>
+          <!-- 标题已修改 -->
+          <text class="title-text">党员旗帜</text>
           <view class="rightBox">
             <text class="more">查看更多</text>
             <image src="/static/images/zhe.png" alt="" class="rightLabel" />
           </view>
         </navigator>
         <view class="bagList">
-          <view class="listMsg" v-for="(article, index) in timeArticles" :key="index" @click="goToArticle(article.url)">
+          <!-- 党员旗帜文章列表 -->
+          <view class="listMsg" v-for="(article, index) in flagArticles" :key="'flag-'+index" @click="goToArticle(article.url)">
             <view class="image">
               <image :src="article.image" mode="aspectFill"></image>
             </view>
@@ -60,6 +62,7 @@
         </view>
       </view>
     </view>
+
   </view>
 </template>
 
@@ -67,68 +70,58 @@
 export default {
   data() {
     return {
-      // 文章列表数据 (支部堡垒)
-      articles: [
+      // 支部堡垒文章列表数据
+      fortressArticles: [
         {
-          title: '喜报 | 我院学子在第十七届中国研究生电子设计竞赛全国总决赛中荣获佳绩',
-          image: '../../static/testimg/t1.jpg',
-          url: 'https://mp.weixin.qq.com/s/otmWFuV1aI2xe98xAu4lRg',
-          date: '2023-08-28'
+          title: '就业辅导|都柏林学院学生党支部开展“我为群众办实事”主题党日活动',
+          image: '../../static/images/fortress1.png', // 请替换为实际图片
+          url: 'https://mp.weixin.qq.com/s/HSVSKkHoUnJiLWe0kW_sZg',
+          date: '2023-06-04' // 示例日期，请按需修改
         },
         {
-          title: '我院举行2023年秋季学期家庭经济困难学生慰问座谈会',
-          image: '../../static/testimg/t2.jpg',
-          url: 'https://mp.weixin.qq.com/s/GVqRjDC-rOF7lxmDF7hHDw',
-          date: '2023-09-15'
-        },
-        {
-          title: '我院学子在2023年“TI杯”全国大学生电子设计竞赛中荣获佳绩',
-          image: '../../static/testimg/t3.jpg',
-          url: 'https://mp.weixin.qq.com/s/UJs68isjooL15A3fNyMp6g',
-          date: '2023-09-05'
-        },
-        {
-          title: '青春筑梦，扬帆起航 | 我院2023级研究生开学典礼暨入学教育顺利举行',
-          image: '../../static/testimg/t4.jpg',
+          title: '北京-都柏林国际学院党委开展院级党课 助力师生党员跨文化交际能力提升',
+          image: '../../static/images/fortress2.png', // 请替换为实际图片
           url: 'https://mp.weixin.qq.com/s/W5DPZoklo-EJIMMG37EPDg',
-          date: '2023-09-01'
+          date: '2023-06-26' // 示例日期，请按需修改
+        },
+        {
+          title: '英文宣讲团|都柏林学院开展学习贯彻习近平新时代中国特色社会主义思想主题教育',
+          image: '../../static/images/fortress3.png', // 请替换为实际图片
+          url: 'https://mp.weixin.qq.com/s/vRi7xqe-uyo90e7FqG-4bw',
+          date: '2023-04-22' // 示例日期，请按需修改
+        },
+         {
+          title: '党课丨做信念坚定、作风过硬的新时代合格党员',
+          image: '../../static/images/fortress4.png', // 请替换为实际图片
+          url: 'https://mp.weixin.qq.com/s/WVgE79BWsBCKdPg2i2L0jw',
+          date: '2023-06-01' // 示例日期，请按需修改
         }
-      ]
-    ,
-    timeArticles:[
+      ],
+      // 党员旗帜文章列表数据
+      flagArticles:[
         {
-          title: '喜报 | 我院学子在第十七届中国研究生电子设计竞赛全国总决赛中荣获佳绩',
-          image: '../../static/testimg/t1.jpg', // 替换为实际图片路径
-          url: 'https://mp.weixin.qq.com/s/otmWFuV1aI2xe98xAu4lRg',
-          date: '2023-08-28'
+          title: '青衿之志，履践致远——信息类专业国家奖学金获得者专访',
+          image: '../../static/images/flag1.png', // 请替换为实际图片
+          url: 'https://mp.weixin.qq.com/s/7JQpYfC4BtWReR47gSe1fw',
+          date: '2025-01-16' // 示例日期，请按需修改
         },
         {
-          title: '我院举行2023年秋季学期家庭经济困难学生慰问座谈会',
-          image: '../../static/testimg/t2.jpg', // 替换为实际图片路径
-          url: 'https://mp.weixin.qq.com/s/GVqRjDC-rOF7lxmDF7hHDw',
-          date: '2023-09-15'
+          title: '遇见更好的自己——金融学专业国家奖学金获得者专访',
+          image: '../../static/images/flag2.png', // 请替换为实际图片
+          url: 'https://mp.weixin.qq.com/s/ZnCixe3ptJFBwa5LOK9UTQ',
+          date: '2025-01-17' // 示例日期，请按需修改
         },
         {
-          title: '我院学子在2023年“TI杯”全国大学生电子设计竞赛中荣获佳绩',
-          image: '../../static/testimg/t3.jpg', // 替换为实际图片路径
-          url: 'https://mp.weixin.qq.com/s/UJs68isjooL15A3fNyMp6g',
-          date: '2023-09-05'
-        },
-        {
-          title: '青春筑梦，扬帆起航 | 我院2023级研究生开学典礼暨入学教育顺利举行',
-          image: '../../static/testimg/t4.jpg', // 替换为实际图片路径
-          url: 'https://mp.weixin.qq.com/s/W5DPZoklo-EJIMMG37EPDg',
-          date: '2023-09-01'
+          title: 'BDIC体育之星谭亦菲：疾速坚持 梦想荣耀',
+          image: '../../static/images/flag3.png', // 请替换为实际图片
+          url: 'https://mp.weixin.qq.com/s/CRjdvmp5PCmKUIE19uBU4Q',
+          date: '2024-05-27' // 示例日期，请按需修改
         }
       ]
     };
   },
   methods: {
-    toYoung() {
-      uni.navigateTo({
-        url: '/pages/memberCommunity/young', //党员旗帜页面
-      });
-    },
+    // toYoung 方法已移除
     goToArticle(url) {
       uni.navigateTo({
         url: `/pages/memberCommunity/webview?url=${encodeURIComponent(url)}`,
@@ -139,6 +132,7 @@ export default {
 </script>
 
 <style scoped>
+/* 样式部分保持不变 */
 .underline-text {
   position: relative;
   line-height: 60rpx;

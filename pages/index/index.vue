@@ -19,7 +19,8 @@
       <view class="bagList">
         <view class="listMsg" v-for="(item, index) in bagList" :key="index">
           <view class="image">
-            <image src="../../static/testimg/t1.jpg" mode="aspectFill"></image>
+            <!-- 修改 src 属性 -->
+            <image :src="item.image" mode="aspectFill"></image>
           </view>
           <view class="viewText">
             <text class="listTitle">{{ item.listTitle }}</text>
@@ -68,35 +69,39 @@ export default {
       title: 'Hello',
       list1: [
         {
-          image: 'https://example.com/party_constitution_cover.jpg',
+          image: '../../static/images/党章与党规学习.png',
           title: '党章与党规学习',
         },
         {
-          image: 'https://example.com/party_history_book_cover.jpg',
+          image: '../../static/images/党史与传统.png',
           title: '党史与传统',
         },
         {
-          image: 'https://example.com/xi_jinping_speech.jpg',
+          image: '../../static/images/最新理论研究成果.png',
           title: '最新理论研究成果',
         },
       ],
       bagList: [
         {
+          image: '../../static/images/理解党的组织结构.png', // 添加图片路径
           listTitle: '理解党的组织结构',
           listTime: '2024-07-20'
         },
         {
+          image: '../../static/images/党员权力与义务.png', // 添加图片路径
           listTitle: '党员权利与义务',
           listTime: '2024-07-15'
         },
-        {
-          listTitle: '最新中央委员会决议',
-          listTime: '2024-07-18'
-        },
-        {
-          listTitle: '党纪党规',
-          listTime: '2024-07-01'
-        },
+        // {
+        //   image: '../../static/images/your_image_name.png',
+        //   listTitle: '最新中央委员会决议',
+        //   listTime: '2024-07-18'
+        // },
+        // {
+        //   image: '../../static/images/another_image_name.png',
+        //   listTitle: '党纪党规',
+        //   listTime: '2024-07-01'
+        // },
       ]
     };
   },
